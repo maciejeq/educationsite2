@@ -22,7 +22,7 @@ from courses.views import course_add, course_detail, course_list, do_section, do
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^', include('django.contrib.auth.urls', namespace='auth')),
-    url(r'^course_detail/(?P<course_id>\d+)/$', course_detail,
+    url(r'^course_detail/(?P<pk>\d+)/$', course_detail,
         name='course_detail'),
     url(r'^course_add/$', course_add, name='course_add'),
     url(r'^section/(?P<section_id>\d+)/$', do_section, name='do_section'),
