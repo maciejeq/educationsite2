@@ -110,3 +110,10 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'elearningsite', 'static'),
 ]
 LOGIN_REDIRECT_URL = '/'
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    )
+}
