@@ -1,0 +1,16 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-eqiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=vedive-width, initial-scale=1">
+    <title>Django E-learning</title>
+    <link href="{% static 'bootstrap-3.3.7/dist/css/bootstrap.min.css' %}" rel="stylesheet">
+  </head>
+  <body>
+    {% block "content" %}Default content{% endblock %}
+    <script scr="{% static 'jquery-1.12.4.min.js' %}"></script>
+    <script scr="{% static 'bootstrap-3.3.7-dist/js/bootstrap.min.js' %}"></script>
+  </body>
+</html>
